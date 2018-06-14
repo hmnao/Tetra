@@ -121,6 +121,8 @@ def get_nearby_stars_compressed_course(vector, radius):
     # iterate over the star lists in the given partition, adding them to
     # the nearby stars list if they're in the correct bin and within range of the vector
     for index in ((2 * (hash_index + offset ** 2)) % compressed_course_sky_map_hash_table_size for offset in itertools.count()):
+      index = int(index)
+
       # if the current slot is empty, the bin does not exist
       if not compressed_course_sky_map[index]:
         break
