@@ -1,0 +1,14 @@
+# Project
+BSC5
+*.npy
+params.txt
+
+# Python
+venv
+*.pyc
+
+# Pycharm IDE
+*.idea
+
+# Jupyter Notebook
+nohup.out
